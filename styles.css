@@ -9,7 +9,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #134200;
 }
 
 nav {
@@ -28,13 +28,26 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #f8f2f2;
     text-decoration: none;
     font-size: 1.1rem;
 }
 
+header {
+    background-color: #1a1a1a;
+    color: #f8f2f2;
+    padding: 20px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    background-image: url(img/VIDEO\ DEL\ HEADER.gif);
+    background-size: 50%;
+    text-align: center;
+    width: 100%;
+}
+
 .search-form {
-    background-color: #fff;
+    background-color:#f8f2f2;
+
     padding: 2rem;
     text-align: center;
     margin-top: 2rem;
@@ -49,7 +62,7 @@ nav ul li a {
 .search-form button {
     padding: 0.7rem 1.5rem;
     background-color: #333;
-    color: #fff;
+    color: #f8f2f2;
     border: none;
     cursor: pointer;
     font-size: 1rem;
@@ -71,7 +84,7 @@ nav ul li a {
 }
 
 .car-item {
-    background-color: #fff;
+    background-color: #f8f2f2;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -107,8 +120,12 @@ nav ul li a {
 }
 
 footer {
+    background-color: #1a1a1a;
+    color: white;
     text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
+    padding: 15px 0;
+    margin-top: 40px;
+    position:relative;
+    width: 100%;
+    bottom: 0;
 }

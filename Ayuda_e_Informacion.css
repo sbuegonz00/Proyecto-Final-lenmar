@@ -1,48 +1,92 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Autos Rápidos</title>
-  <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <header>
-    <h1>Autos Rápidos</h1>
-    <p>Los mejores coches al mejor precio</p>
-  </header>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #134200;
+}
 
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Catálogo</a>
-    <a href="#">Ofertas</a>
-    <a href="#">Contacto</a>
-  </nav>
+header {
+  background-color: #1a1a1a;
+  color: #f8f2f2;
+  padding: 20px 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 60px;
+  background-image: url(img/VIDEO\ DEL\ HEADER.gif);
+  background-size: 50%;
+  text-align: center;
+  width: 100%;
+}
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
 
-  <div class="container">
-    <div class="car-card">
-      <img src="https://via.placeholder.com/800x400?text=Auto+Deportivo" alt="Auto Deportivo">
-      <div class="car-card-content">
-        <h3>Ford Mustang GT</h3>
-        <p>Potente motor V8, diseño agresivo y excelente rendimiento.</p>
-        <p class="price">$45,000 USD</p>
-      </div>
-    </div>
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
 
-    <div class="car-card">
-      <img src="https://via.placeholder.com/800x400?text=Auto+Familiar" alt="Auto Familiar">
-      <div class="car-card-content">
-        <h3>Toyota Highlander</h3>
-        <p>Espacioso, seguro y perfecto para la familia.</p>
-        <p class="price">$35,000 USD</p>
-      </div>
-    </div>
-  </div>
+nav ul li {
+    margin: 0 15px;
+}
 
-  <footer>
-    <p>&copy; 2025 Autos Rápidos. Todos los derechos reservados.</p>
-  </footer>
+nav ul li a {
+    color: #f8f2f2;
+    text-decoration: none;
+    font-size: 1.1rem; 
+}
 
-</body>
-</html>
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.car-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+}
+
+.car-card-content {
+  padding: 15px;
+}
+
+.car-card h3 {
+  margin-bottom: 10px;
+}
+
+.car-card p {
+  margin-bottom: 15px;
+}
+
+.price {
+  color: #e63946;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center; 
+  padding: 15px 0;
+  margin-top: 40px;
+  position:relative;
+  width: 100%;
+  bottom: 0;
+}
