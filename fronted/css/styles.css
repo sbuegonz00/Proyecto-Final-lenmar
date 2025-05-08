@@ -1,0 +1,138 @@
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #134200;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+h1{
+    color:  #333;
+}
+
+h2{
+    color: #f8f2f2;
+}
+nav ul li a {
+    color: #f8f2f2;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #f8f2f2;
+    padding: 20px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    background-image: url(/fronted/img/VIDEO\ DEL\ HEADER.gif);
+    background-size: 50%;
+    text-align: center;
+    width: 100%;
+}
+
+.search-form {
+    background-color:#f8f2f2;
+
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.search-form input {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 200px;
+}
+
+.search-form button {
+    padding: 0.7rem 1.5rem;
+    background-color: #333;
+    color: #f8f2f2;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.search-form button:hover {
+    background-color: #555;
+}
+
+.results {
+    margin: 3rem 0;
+    padding: 1rem;
+}
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.car-item {
+    background-color: #f8f2f2;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.car-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.car-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.car-item p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.car-item button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.car-item button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    position:relative;
+    width: 100%;
+    bottom: 0;
+}
