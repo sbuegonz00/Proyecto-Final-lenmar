@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos Rápidos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Autos Rápidos</h1>
+        <p>Los mejores coches al mejor precio</p>
+    </header>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="../html/index.html">Inicio</a></li>
+            <li><a href="../html/favoritos.html">Favoritos</a></li>
+            <li><a href="../html/vender_coche.html">Vender</a></li>
+            <li><a href="../html/Ayuda_e_informacion.html">Ayuda</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulario de búsqueda -->
+    <section class="search-form">
+        <h1>Busca tu coche ideal</h1>
+        <form>
+            <input type="text" id="marca" placeholder="Marca">
+            <input type="text" id="modelo" placeholder="Modelo">
+            <input type="number" id="precio-min" placeholder="Precio Mínimo">
+            <input type="number" id="precio-max" placeholder="Precio Máximo">
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <!-- Resultados de búsqueda -->
+    <section class="results">
+        <h2>Resultados de la búsqueda</h2>
+        <div class="car-list">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Autos Rápidos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
