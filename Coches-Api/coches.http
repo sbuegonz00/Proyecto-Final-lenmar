@@ -1,0 +1,6 @@
+### Obtener todas las películas
+GET http://localhost:3000/api/coches
+Accept: application/json
+
+###
+

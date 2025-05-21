@@ -40,35 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function viewDetails(marca, precio, ubicacion) {
-    const carDetails = { marca, precio, ubicacion };
-    localStorage.setItem("carDetails", JSON.stringify(carDetails));
-    window.location.href = "detalles_coche.html"; // Redirige a la página de detalles
-}
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const carDetails = JSON.parse(localStorage.getItem("carDetails"));
 
-    if (carDetails) {
-        const detailsContainer = document.createElement("section");
-        detailsContainer.classList.add("car-details");
 
-        detailsContainer.innerHTML = 
-            <><h2>Detalles del Vehículo</h2><div class="car-info">
-                    <div class="info">
-                        <h3>${carDetails.marca}</h3>
-                        <p><strong>Precio:</strong> ${carDetails.precio}€</p>
-                        <p><strong>Ubicación:</strong> ${carDetails.ubicacion}</p>
-                        <button class="contact-btn">Contactar al vendedor</button>
-                        <button class="fav-btn">Añadir a Favoritos</button>
-                    </div>
-                </div></>
-        ;
-
-        document.body.appendChild(detailsContainer);
-    } else {
-        document.body.innerHTML = "<h2>No se encontraron detalles del vehículo</h2>";
-    }
-});
 

@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #134200;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #f8f2f2;
+    padding: 20px 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    background-image: url(../img/VIDEO\ DEL\ HEADER.gif);
+    background-size: 50%;
+    text-align: center;
+    width: 100%;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f8f2f2;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #b7e4c7;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto 30px auto;
+    padding: 30px 24px;
+    background: #f8f2f2;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+section {
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e0ffe7;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+section h2, section h3 {
+    color: #134200;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+section p, section a {
+    color: #222;
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+section a {
+    color: #1b7f3a;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+section a:hover {
+    color: #134200;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
